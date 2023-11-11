@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" href="index.css"  >
+	
+</head>
+<body>
+
+	<header>
+		<div class="heading" >
+			<div class="menu-btn">
+				<img src="menu2.png" id="menu-btn" onclick="showmenu()">
+			</div>
+			
+			<div class="logo-name" >
+				<h3>JustCallMeRenz</h3>
+			</div>
+			
+			<div class="search-btn" >
+				<img src="search.png" onclick="showSearch()">
+			</div>
+		</div>
+	</header>
+	
+<!-- This is for search bar input -->				
+	<form class="search-input" id="search-input"  action="searchResults.html" >
+		<div>
+			<input type="search" placeholder="Search for pogi e.g ('Renz')" value="" >
+			<button>Search</button>
+		</div>
+	</form>
+	
+<!-- This is for Menu list --->	
+	<div id="navbar" class="navbar">
+		<div class="close-btn" onclick="closemenu()">
+			<img src="cross-128.png">
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="Skills.html" >Skills</a></li>
+				<li><a href="Projects.html" >Projects</a></li>
+				<li><a href="About.html" >About</a></li>
+			</ul>
+		</div>		
+	</div>
+	
+	<center>
+		<div class="main" >
+			<img src="canvasLog30.jpg" >
+			<p><span style="font-size:25px" >H</span>ello everyone, my name is Renz Malayan Cole, 18 years old. I currently lived in Ipilan, Salug, Zamboanga del Norte.
+			</p>
+			
+			<p><span style="font-size:25px" >W</span>ell, I'm a self taught web developer (beginner level) - it all started with me wanting to understand how websites work.
+				I've tackled things like python, html, css, and javascript on my own, learning by doing and figuring things out step by step. Every line of code is like a victory
+				for me. Everytime I run my code and I see no errors, I feel like "Surprise motherfathers!!!!".
+			</p>
+			
+			<p><span style="font-size:25px" >I</span> built this website to keep on track with my progress as I go through the process of learning.
+				And I just want to see what happens when I don't give up. :>
+			</p>
+		</div>
+	</center>
+	
+	
+	<footer>
+	<center>
+		<div>
+			<p>This website still under development.<br>
+			Responsive only on mobile devices.</p>	
+		</div>
+	</center>
+	</footer>
+	
+<script type="text/javascript">
+	var x = document.getElementById("navbar");
+	function showmenu(){
+		x.style.left = "0px";
+		y.style.visibility = "hidden";
+	}
+	function closemenu(){
+		x.style.left = "-250px";
+	}
+	
+	var y = document.getElementById("search-input");
+	function showSearch(){
+		y.style.visibility = "visible";
+	}
+
+</script>	
+	
+</body>
+</html>
